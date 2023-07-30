@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Dental Cases</title>
-</head>
-<body>
-  <nav class="navbar">
-    <!-- LOGO -->
-    <div class="logo">AbdolKarim Azizi</div>
-  </nav>
-  <br><br><br>
-  <div class="upload__box">
-    <div class="upload__btn-box">
-      <label class="upload__btn">
-        <p>Upload images</p>
-        <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-      </label>
-    </div>
-    <div class="upload__img-wrap"></div>
-  </div>
+jQuery(document).ready(function () {
+    ImgUpload();
+});
 
-    
-  <script>
-  function ImgUpload() {
+function ImgUpload() {
     var imgWrap = "";
     var imgArray = [];
   
@@ -138,6 +116,4 @@
       }
       $(this).parent().parent().remove();
     });
-  }</script>
-</body>
-</html>
+  }
